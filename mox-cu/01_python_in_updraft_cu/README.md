@@ -22,6 +22,7 @@ uv python pin 3.13
 To add a package (e.g., titanoboa) to your UV environment, use:
 ```sh
 uv add titanoboa
+uv add web3
 ```
 
 3. Install vyper on UV Environment
