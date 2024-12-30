@@ -64,7 +64,7 @@ def main():
     print("\n", signed_transaction)
 
     # Sending the transaction
-    print("\nSending the transaction...*\n")
+    print(f"\nSending the transaction to....", w3.eth.chain_id )
     tx_hash = w3.eth.send_raw_transaction(signed_transaction.raw_transaction)
     print("\n transaction hash:\t", tx_hash.hex())
     tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash.hex())
