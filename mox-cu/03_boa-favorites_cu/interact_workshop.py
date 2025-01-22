@@ -5,8 +5,14 @@ from eth_account import Account
 import os
 
 
+# During the deployment of the contract, we will get the contract address, please find the example below,
+# ¢python deploy_workshop.py  
+# Lets read in the vyper contract and deploy it to the Anvil blockchain
+# tx broadcasted: 0xa98fedc4a457b411f330a0f9a8b602bac8c775a03fb4e461b05031ece9a5d432
+# 0xa98fedc4a457b411f330a0f9a8b602bac8c775a03fb4e461b05031ece9a5d432 mined in block 0x20ae2d37a9378e9ade4907905d894b9dfe3bb5e162d25f1504a7bddb68c9c9f0!
+# contract deployed at 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
 
-MY_CONTRACT = "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1"
+MY_CONTRACT = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
 
 
 # Load the environment variables
