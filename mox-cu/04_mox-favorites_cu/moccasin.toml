@@ -29,7 +29,7 @@ unsafe_password_file = "~/.moccasin/unsafe-passwords/Sepolia1"
 
 [networks.sepolia-tenderly]
 url = "$tenderly_sepolia_RPC_URL"
-chain_id = 111555111
+chain_id = 111222333
 save_to_db = false
 prompt_live = false
 default_account_name = "sepolia1"
