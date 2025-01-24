@@ -1,0 +1,11 @@
+@external
+def store(new_number: uint256):
+    ...
+
+@external
+@view
+def retrieve() -> uint256:
+    ...
+    
+
+    
