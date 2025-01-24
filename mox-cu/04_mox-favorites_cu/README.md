@@ -4,19 +4,30 @@
 
 ## Quickstart
 
-1. Deploy to a fake local network that titanoboa automatically spins up!
+1. To initialize the Moccasin project using the mox CLI, use the following command
+```bash
+mox init --force --vscode --pyproject
+```
+When you run the command, you will see output similar to this:
+```bash
+Running init command...  
+Project initialized at /Users/draju1980/lab/solid-adventure/mox-cu/04_mox-favorites_cu 
+```
+
+
+2. Deploy to a fake local network that titanoboa automatically spins up!
 
 ```bash
 mox run deploy
 ```
 
-2. Run tests
+3. Run tests
 
 ```
 mox test
 ```
 
-3. There are the Moccasin wallet command
+4. There are the Moccasin wallet command
 
 a. Wallet commands to import the private key in local keystore, during the import process it will prompt you for password.
 ```wallet
@@ -72,7 +83,7 @@ Running wallet command...
 Successfully deleted account Anvil1 from keystores
 ```
 
-4. Testing the contract using test case script,
+5. Testing the contract using test case script,
 below command will run all the test
 ```test
 ✗ mox test
