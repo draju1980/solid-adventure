@@ -5,20 +5,15 @@
 # @license MIT
 
 # importing the favorites contract
-import favorites
-# import workshop
+import workshop
 
-# initializing the favorites contract
-initializes: favorites
-# # importing the workshop contract
-# initializes: workshop
+# importing the workshop contract
+initializes: workshop
 
 # export retrieve and add_person functions from the favorites contract || get and set functions from the workshop contract
 exports: (
-    favorites.retrieve,
-    favorites.add_person,
-    # workshop.get,
-    # workshop.set,
+    workshop.get,
+    workshop.set,
 )
 
 
@@ -30,9 +25,5 @@ exports: (
 # deploy and initialize the favorites and workshop contracts
 @deploy
 def __init__():
-    favorites.__init__()
-    # workshop.__init__()
-
-@external
-def store(new_number: uint256):
-    favorites.my_favorite_number = new_number + 5
+    workshop.__init__()
+    
